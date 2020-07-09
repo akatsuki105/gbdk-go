@@ -33,7 +33,36 @@ void main() {
 }
 ```
 
+## Install
+
+#### Windows & Linux
+
+You need to build binary from source.
+
+Requirements:
+- Go 1.14
+- Make
+
+```sh
+$ git clone https://github.com/Akatsuki-py/gbdk-go.git
+$ cd ./gbdk-go
+$ make
+```
+
+#### MacOS
+
+You can download binary from [Release page](https://github.com/Akatsuki-py/gbdk-go/releases).
+
 ## Usage
+
+Requirements:
+- gbdk-go/gbdkgo
+- gbdk-go/go2c
+- gbdk-go/bin
+
+They must be in the same directory.
+
+If you are doing the above Install work, there should be no problem.
 
 ```sh
 $ gbdkgo [options] dir

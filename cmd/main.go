@@ -37,14 +37,14 @@ func Run() int {
 	}
 
 	assets := filepath.Join(dir, "asset", "*.go")
-	assetCmd := fmt.Sprintf("go run ./compiler %s", assets)
+	assetCmd := fmt.Sprintf("./go2c %s", assets)
 	fmt.Println(assetCmd)
 	cmd := exec.Command("zsh", "-c", assetCmd)
 	cmd.Env = append(os.Environ(), "ASSET=true")
 	cmd.Output()
 
 	scripts := filepath.Join(dir, "*.go")
-	scriptCmd := fmt.Sprintf("go run ./compiler %s", scripts)
+	scriptCmd := fmt.Sprintf("./go2c %s", scripts)
 	fmt.Println(scriptCmd)
 	if _, err := exec.Command("zsh", "-c", scriptCmd).Output(); err != nil {
 		fmt.Fprintf(os.Stderr, "compile error: %s", err)

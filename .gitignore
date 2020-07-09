@@ -1,6 +1,10 @@
-gbdk.exe
 .DS_Store
-tmp/
-*.gb
+
 gbdkgo
 gbdkgo.exe
+go2c
+go2c.exe
+*.gb
+
+build/
+tmp/
