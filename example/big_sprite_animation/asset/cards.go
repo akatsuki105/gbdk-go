@@ -5,7 +5,7 @@ import (
 	"github.com/Akatsuki-py/gbdk-go/api/macro"
 )
 
-var spriteBank = macro.Define(0)
+var CardsBank = macro.Define(0)
 
 var Cards = []gb.UINT8{
 	0xFF, 0xFF, 0x80, 0x80, 0x80, 0x80, 0x81, 0x81,
