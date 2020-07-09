@@ -35,8 +35,6 @@ void main() {
 
 ## Install
 
-#### Windows & Linux
-
 You need to build binary from source.
 
 Requirements:
@@ -48,10 +46,6 @@ $ git clone https://github.com/Akatsuki-py/gbdk-go.git
 $ cd ./gbdk-go
 $ make
 ```
-
-#### MacOS
-
-You can download binary from [Release page](https://github.com/Akatsuki-py/gbdk-go/releases).
 
 ## Usage
 
