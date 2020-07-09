@@ -6,5 +6,7 @@ go2c
 go2c.exe
 *.gb
 
+./bin/
+./bin/gbdk2020/SDCC/bin/
 build/
 tmp/

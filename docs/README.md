@@ -52,7 +52,7 @@ $ make
 Requirements:
 - gbdk-go/gbdkgo
 - gbdk-go/go2c
-- gbdk-go/bin
+- gbdk-go/gbdk2020
 
 They must be in the same directory.
 

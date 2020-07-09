@@ -6,6 +6,7 @@ endif
 
 .PHONY: build
 build:
+	go get -u github.com/Akatsuki-py/gbdk-go/compiler
 	go build -o go2c ./compiler/
 	go build -o gbdkgo -ldflags "-X main.version=$(shell git describe --tags)" ./cmd/
 

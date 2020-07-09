@@ -39,21 +39,21 @@ func Run() int {
 	assets := filepath.Join(dir, "asset", "*.go")
 	assetCmd := fmt.Sprintf("./go2c %s", assets)
 	fmt.Println(assetCmd)
-	cmd := exec.Command("zsh", "-c", assetCmd)
+	cmd := exec.Command("/bin/sh", "-c", assetCmd)
 	cmd.Env = append(os.Environ(), "ASSET=true")
 	cmd.Output()
 
 	scripts := filepath.Join(dir, "*.go")
 	scriptCmd := fmt.Sprintf("./go2c %s", scripts)
 	fmt.Println(scriptCmd)
-	if _, err := exec.Command("zsh", "-c", scriptCmd).Output(); err != nil {
+	if _, err := exec.Command("/bin/sh", "-c", scriptCmd).Output(); err != nil {
 		fmt.Fprintf(os.Stderr, "compile error: %s", err)
 		return ExitCodeError
 	}
 
-	zshCmd := fmt.Sprintf("bin/lcc -o %s tmp/*.c", *output)
+	zshCmd := fmt.Sprintf("gbdk2020/lcc -o %s tmp/*.c", *output)
 	fmt.Println(zshCmd)
-	if _, err := exec.Command("zsh", "-c", zshCmd).Output(); err != nil {
+	if _, err := exec.Command("/bin/sh", "-c", zshCmd).Output(); err != nil {
 		fmt.Fprintf(os.Stderr, "build error: %s", err)
 		return ExitCodeError
 	}
