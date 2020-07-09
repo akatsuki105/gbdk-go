@@ -89,3 +89,11 @@ The directory structure also needs to be specific.
 Although gbdk-go allows GB development with Go, there are some grammars such as defer and goroutine that cannot be used. 
 
 So I'm going to write a linter for gbdk-go.
+
+## Performance warning
+
+gbdk-go outputs GB ROM with C in between.
+
+When using C language, the performance is greatly inferior compared to the raw assembly.
+
+You should read [to_c_or_not_to_c.md](https://gist.github.com/ISSOtm/4f4d335c3fd258ad0dfc7d4d615409fd).
