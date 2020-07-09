@@ -2,9 +2,10 @@ package expr
 
 import (
 	"fmt"
-	"gbdk/compiler/pkg/types"
-	"gbdk/compiler/pkg/util"
 	"go/ast"
+
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/types"
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/util"
 )
 
 func CompileCallExpr(call *ast.CallExpr) string {

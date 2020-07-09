@@ -2,8 +2,9 @@ package macro
 
 import (
 	"fmt"
-	"gbdk/compiler/pkg/expr"
 	"go/ast"
+
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/expr"
 )
 
 func CompileDefine(name string, defineExpr ast.Expr) string {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gbdk/api/gb"
-	"gbdk/example/simple_shmup/asset"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/example/simple_shmup/asset"
 )
 
 var gamemap = []gb.UINT8{

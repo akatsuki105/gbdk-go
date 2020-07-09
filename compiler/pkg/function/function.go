@@ -2,9 +2,10 @@ package function
 
 import (
 	"fmt"
-	"gbdk/compiler/pkg/block"
-	"gbdk/compiler/pkg/expr"
 	"go/ast"
+
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/block"
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/expr"
 
 	"golang.org/x/tools/go/analysis"
 )

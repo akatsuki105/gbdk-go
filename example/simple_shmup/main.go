@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gbdk/api/gb"
-	"gbdk/api/rand"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/api/rand"
 )
 
 // bank0

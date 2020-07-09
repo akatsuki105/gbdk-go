@@ -1,6 +1,6 @@
 package main
 
-import "gbdk/api/stdio"
+import "github.com/Akatsuki-py/gbdk-go/api/stdio"
 
 func main() {
 	stdio.Printf("Hello World!")

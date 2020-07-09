@@ -1,8 +1,8 @@
 package asset
 
 import (
-	"gbdk/api/gb"
-	"gbdk/api/macro"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/api/macro"
 )
 
 var SpriteTilesBank = macro.Define(0)

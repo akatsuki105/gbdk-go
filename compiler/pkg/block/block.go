@@ -2,11 +2,12 @@ package block
 
 import (
 	"fmt"
-	"gbdk/compiler/pkg/expr"
-	"gbdk/compiler/pkg/macro"
-	"gbdk/compiler/pkg/util"
 	"go/ast"
 	"strings"
+
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/expr"
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/macro"
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/util"
 
 	"golang.org/x/tools/go/analysis"
 )

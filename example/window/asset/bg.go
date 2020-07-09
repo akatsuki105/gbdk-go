@@ -1,7 +1,7 @@
 package asset
 
 import (
-	"gbdk/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
 )
 
 var BGTileData = []gb.UINT8{

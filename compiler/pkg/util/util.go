@@ -105,12 +105,12 @@ func GetCFunc(funcName string) string {
 }
 
 var GBDKPackage []string = []string{
-	"gbdk/api/stdio", "gbdk/api/gb", "gbdk/api/str", "gbdk/api/stdlib", "gbdk/api/macro", "gbdk/api/mem", "gbdk/api/drawing", "gbdk/api/rand",
+	"github.com/Akatsuki-py/gbdk-go/api/stdio", "github.com/Akatsuki-py/gbdk-go/api/gb", "github.com/Akatsuki-py/gbdk-go/api/str", "github.com/Akatsuki-py/gbdk-go/api/stdlib", "github.com/Akatsuki-py/gbdk-go/api/macro", "github.com/Akatsuki-py/gbdk-go/api/mem", "github.com/Akatsuki-py/gbdk-go/api/drawing", "github.com/Akatsuki-py/gbdk-go/api/rand",
 }
 
 func RemoveTypePackage(path string) string {
-	s := strings.ReplaceAll(path, "gbdk/api/gb.", "")
-	s = strings.ReplaceAll(s, "gbdk/types.", "")
+	s := strings.ReplaceAll(path, "github.com/Akatsuki-py/gbdk-go/api/gb.", "")
+	s = strings.ReplaceAll(s, "github.com/Akatsuki-py/gbdk-go/types.", "")
 	return s
 }
 

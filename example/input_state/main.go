@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gbdk/api/gb"
-	"gbdk/api/stdio"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/api/stdio"
 )
 
 func main() {

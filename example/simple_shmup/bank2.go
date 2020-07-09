@@ -1,9 +1,9 @@
 package main
 
 import (
-	"gbdk/api/drawing"
-	"gbdk/api/gb"
-	"gbdk/api/rand"
+	"github.com/Akatsuki-py/gbdk-go/api/drawing"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/api/rand"
 )
 
 var badguyAI = []gb.UINT8{

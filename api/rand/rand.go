@@ -1,6 +1,6 @@
 package rand
 
-import "gbdk/api/gb"
+import "github.com/Akatsuki-py/gbdk-go/api/gb"
 
 func Initrand(seed gb.UINT16) {}
 

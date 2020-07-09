@@ -1,6 +1,6 @@
 package mem
 
-import "gbdk/api/gb"
+import "github.com/Akatsuki-py/gbdk-go/api/gb"
 
 // ReadMemory Read value from addr
 func ReadMemory(addr gb.UINT16) uint8 {

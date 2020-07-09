@@ -1,4 +1,4 @@
-module gbdk
+module github.com/Akatsuki-py/gbdk-go
 
 go 1.14
 

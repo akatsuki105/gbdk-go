@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gbdk/api/gb"
-	"gbdk/example/window/asset"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/example/window/asset"
 )
 
 func main() {

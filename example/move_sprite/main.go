@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gbdk/api/gb"
-	"gbdk/example/move_sprite/asset"
+	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/example/move_sprite/asset"
 )
 
 func main() {

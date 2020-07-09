@@ -3,11 +3,12 @@ package file
 import (
 	"errors"
 	"fmt"
-	"gbdk/compiler/pkg/block"
-	"gbdk/compiler/pkg/function"
-	"gbdk/compiler/pkg/util"
 	"go/ast"
 	"strings"
+
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/block"
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/function"
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/util"
 
 	"golang.org/x/tools/go/analysis"
 )

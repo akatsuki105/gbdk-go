@@ -2,12 +2,13 @@ package main
 
 import (
 	"bytes"
-	"gbdk/compiler/pkg/file"
 	"go/ast"
 	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/Akatsuki-py/gbdk-go/compiler/pkg/file"
 
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"

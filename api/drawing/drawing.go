@@ -1,6 +1,6 @@
 package drawing
 
-import "gbdk/api/gb"
+import "github.com/Akatsuki-py/gbdk-go/api/gb"
 
 /** Size of the screen in pixels */
 const (
