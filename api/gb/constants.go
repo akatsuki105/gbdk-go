@@ -1,0 +1,10 @@
+package gb
+
+const (
+	SCREENWIDTH  = 0xA0
+	SCREENHEIGHT = 0x90
+	MINWNDPOSX   = 0x07
+	MINWNDPOSY   = 0x00
+	MAXWNDPOSX   = 0xA6
+	MAXWNDPOSY   = 0x8F
+)

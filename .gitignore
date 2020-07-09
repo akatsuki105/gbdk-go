@@ -1,0 +1,6 @@
+gbdk.exe
+.DS_Store
+tmp/
+*.gb
+gbdkgo
+gbdkgo.exe
