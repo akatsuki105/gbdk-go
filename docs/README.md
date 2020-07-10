@@ -1,5 +1,3 @@
-![logo](logo.png)
-
 # gbdk-go
 
 gbdk-go is a Go binding for GBDK. You can do GameBoy software development with Go.
@@ -68,7 +66,7 @@ $ gbdkgo [options] dir
 $ gbdkgo example/simple_shmup
 ```
 
-![starcors](./starcors.png)
+<img src="starcors.png" width="50%"/>
 
 ## API
 
