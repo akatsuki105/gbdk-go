@@ -1,6 +1,6 @@
-# gbdk-go
+![logo](logo.png)
 
-GameBoy Development Kit for gopher.
+# gbdk-go
 
 gbdk-go is a Go binding for GBDK. You can do GameBoy software development with Go.
 
@@ -56,7 +56,7 @@ Requirements:
 
 They must be in the same directory.
 
-If you are doing the above Install work, there should be no problem.
+If you are doing the above Install step, there should be no problem.
 
 ```sh
 $ gbdkgo [options] dir
@@ -67,6 +67,8 @@ $ gbdkgo [options] dir
 ```sh
 $ gbdkgo example/simple_shmup
 ```
+
+![starcors](./starcors.png)
 
 ## API
 

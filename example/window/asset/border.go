@@ -5,7 +5,7 @@ import (
 	"github.com/Akatsuki-py/gbdk-go/api/macro"
 )
 
-var borderBank = macro.Define(0)
+var BorderBank = macro.Define(0)
 
 var Border = []gb.UINT8{
 	0x00, 0x00, 0x1F, 0x1F, 0x20, 0x20, 0x4F, 0x4F,
