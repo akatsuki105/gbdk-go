@@ -70,7 +70,7 @@ $ gbdkgo example/simple_shmup
 
 ## API
 
-Detailed documents is ToDo.
+[gbdk-go API](https://pkg.go.dev/github.com/Akatsuki-py/gbdk-go/api@v0.0.1)
 
 The API is basically a GBDK binding.
 
@@ -78,9 +78,11 @@ Some are not yet implemented.
 
 ## Project rules
 
-Detailed documents is ToDo.
+- `./main.go` main file in project. `./main.c` in gbdk.
+- `./**.go` sub file in project. `./**.c` in gbdk.
+- `./asset/**.go` asset file in project. these file is converted into `asset.h`
 
-The build target is the Go directory, not the file. 
+You must create a Go directory project according to above format. 
 
 The directory structure also needs to be specific.
 
