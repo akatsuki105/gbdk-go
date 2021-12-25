@@ -105,7 +105,15 @@ func GetCFunc(funcName string) string {
 }
 
 var GBDKPackage []string = []string{
-	"github.com/Akatsuki-py/gbdk-go/api/stdio", "github.com/Akatsuki-py/gbdk-go/api/gb", "github.com/Akatsuki-py/gbdk-go/api/str", "github.com/Akatsuki-py/gbdk-go/api/stdlib", "github.com/Akatsuki-py/gbdk-go/api/macro", "github.com/Akatsuki-py/gbdk-go/api/mem", "github.com/Akatsuki-py/gbdk-go/api/drawing", "github.com/Akatsuki-py/gbdk-go/api/rand",
+	"github.com/Akatsuki-py/gbdk-go/api/stdio",
+	"github.com/Akatsuki-py/gbdk-go/api/gb",
+	"github.com/Akatsuki-py/gbdk-go/api/gb/cgb",
+	"github.com/Akatsuki-py/gbdk-go/api/str",
+	"github.com/Akatsuki-py/gbdk-go/api/stdlib",
+	"github.com/Akatsuki-py/gbdk-go/api/macro",
+	"github.com/Akatsuki-py/gbdk-go/api/mem",
+	"github.com/Akatsuki-py/gbdk-go/api/drawing",
+	"github.com/Akatsuki-py/gbdk-go/api/rand",
 }
 
 func RemoveTypePackage(path string) string {

@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/Akatsuki-py/gbdk-go/api/gb"
+	"github.com/Akatsuki-py/gbdk-go/api/gb/cgb"
 	"github.com/Akatsuki-py/gbdk-go/example/simple_shmup/asset"
 )
 
@@ -41,10 +42,10 @@ var gamemap = []gb.UINT8{
 }
 
 var bgpal = []gb.UINT16{
-	gb.RGB(0, 0, 0), gb.RGB(10, 10, 10), gb.RGB(20, 20, 20), gb.RGB(30, 30, 30),
+	cgb.RGB(0, 0, 0), cgb.RGB(10, 10, 10), cgb.RGB(20, 20, 20), cgb.RGB(30, 30, 30),
 }
 var spritepal = []gb.UINT16{
-	gb.RGB(0, 0, 0), gb.RGB(10, 10, 10), gb.RGB(20, 20, 20), gb.RGB(30, 30, 30),
+	cgb.RGB(0, 0, 0), cgb.RGB(10, 10, 10), cgb.RGB(20, 20, 20), cgb.RGB(30, 30, 30),
 }
 
 func DrawTitleScreen() {
@@ -69,7 +70,7 @@ func LoadGameTiles() {
 
 	gb.SetBkgData(0, 1, asset.BGTile)
 	gb.SetBkgTiles(0, 0, 32, 32, gamemap)
-	gb.SetBkgPalette(0, 1, bgpal)
+	cgb.SetBkgPalette(0, 1, bgpal)
 	gb.SetSpriteData(0, 3, asset.SpriteTiles)
 	gb.SetSpriteTile(0, 0)
 	gb.SetSpriteTile(1, 1)
