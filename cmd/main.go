@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
+	"path"
 	"path/filepath"
 )
 
@@ -46,15 +47,16 @@ func Run() int {
 	scripts := filepath.Join(dir, "*.go")
 	scriptCmd := fmt.Sprintf("./go2c %s", scripts)
 	fmt.Println(scriptCmd)
-	if _, err := exec.Command("/bin/sh", "-c", scriptCmd).Output(); err != nil {
-		fmt.Fprintf(os.Stderr, "compile error: %s", err)
+	if out, err := exec.Command("/bin/sh", "-c", scriptCmd).Output(); err != nil {
+		fmt.Fprintf(os.Stderr, "compile error: %s\n%s\n", err, out)
 		return ExitCodeError
 	}
 
-	zshCmd := fmt.Sprintf("gbdk2020/lcc -o %s tmp/*.c", *output)
+	zshCmd := fmt.Sprintf("%s -o %s tmp/*.c", path.Join(gbdkPath(), "lcc"), *output)
+
 	fmt.Println(zshCmd)
-	if _, err := exec.Command("/bin/sh", "-c", zshCmd).Output(); err != nil {
-		fmt.Fprintf(os.Stderr, "build error: %s", err)
+	if out, err := exec.Command("/bin/sh", "-c", zshCmd).Output(); err != nil {
+		fmt.Fprintf(os.Stderr, "\nbuild error: %s\n%s\n", err, out)
 		return ExitCodeError
 	}
 
@@ -90,4 +92,12 @@ Options:
         output gb file (default "game.gb")
   -v    show version
 `, version)
+}
+
+func gbdkPath() string {
+	if p := os.Getenv("GBDKDIR"); p != "" {
+		return path.Join(p, "bin")
+	}
+
+	return ""
 }
