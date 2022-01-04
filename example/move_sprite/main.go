@@ -17,22 +17,20 @@ func main() {
 	gb.SHOW_SPRITES()
 
 	for {
-		if (gb.Joypad() & gb.J_RIGHT) > 0 {
+		switch gb.Joypad() {
+		case gb.J_RIGHT:
 			x++
 			gb.MoveSprite(0, x, y)
 			gb.Delay(10)
-		}
-		if (gb.Joypad() & gb.J_LEFT) > 0 {
+		case gb.J_LEFT:
 			x--
 			gb.MoveSprite(0, x, y)
 			gb.Delay(10)
-		}
-		if (gb.Joypad() & gb.J_UP) > 0 {
+		case gb.J_UP:
 			y--
 			gb.MoveSprite(0, x, y)
 			gb.Delay(10)
-		}
-		if (gb.Joypad() & gb.J_DOWN) > 0 {
+		case gb.J_DOWN:
 			y++
 			gb.MoveSprite(0, x, y)
 			gb.Delay(10)

@@ -79,6 +79,8 @@ func include(name string) string {
 	switch {
 	case h == "gb":
 		return fmt.Sprintf("#include <gb/%s.h>\n", h)
+	case h == "cgb":
+		return fmt.Sprintf("#include <gb/%s.h>\n", h)
 	case h == "drawing":
 		return "#include <gb/drawing.h>\n"
 	case h == "str":
